@@ -1,0 +1,23 @@
+name: Get HM University Certificate
+on: [push]
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v2
+        with:
+          latexmk_use_xelatex: true
+          root_file: cert.tex
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: "HM University Certificate"
+          path: cert.pdf
+
+
+      
