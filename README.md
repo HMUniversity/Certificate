@@ -4,7 +4,7 @@ HM University Certificate
 
 ## Usage
 
-1. **makesure** you have <img src="https://latex.codecogs.com/gif.latex?LaTeX" /> environment installed!
+1. **makesure** you have `LaTeX` environment installed!
 
 2. clone git repository
 
