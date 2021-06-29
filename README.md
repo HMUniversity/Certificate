@@ -2,7 +2,12 @@
 
 HM University Certificate
 
+
 ## Usage
+
+Fork the repo and replace your name in `cert.tex`, then open `Github Actions` to download your certificate!
+
+## Compile
 
 1. **makesure** you have `LaTeX` environment installed!
 
