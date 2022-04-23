@@ -1,0 +1,120 @@
+% !TEX program = xelatex
+\documentclass{article}
+\usepackage{niceframe}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{tmargin=.5cm,bmargin=.5cm,
+lmargin=.5cm,rmargin=.5cm}
+\usepackage{makecell}
+
+%==============================
+% Put your name here
+
+\newcommand{\NAME}{YOUR\_NAME\_HERE}
+\newcommand{\YEAR}{YEAR}
+\newcommand{\DATE}{DATE}
+
+%==============================
+
+\begin{document}
+
+\centering
+
+\scalebox{3}{
+    \color{green!30!black!60}
+    \begin{minipage}{.33\textwidth}
+        {
+            \centering
+            
+            \vspace{3mm}
+            
+            \textcolor{green!10!black!90}{\small \textsc{Home University}}
+            
+            \vspace{3mm}
+            
+            \begin{minipage}{.9\textwidth}
+                \centering
+                \includegraphics[height=1.1cm]{img/logo.png}
+            \end{minipage}
+
+            \vspace{3mm}
+
+            \textcolor{green!10!black!90}{\tiny It is to certify that}
+
+            \vspace{1mm}
+
+            \textcolor{black}{\small \NAME}
+            
+            \textcolor{black}{\tiny St. Linus College}
+
+            \textcolor{green!10!black!90}{\tiny having admitted to a thesis entitled}
+
+            \textcolor{black}{\tiny \textsc{Electrical Engineering \& Computer Science, Baipiao}}
+            
+            \vspace{2mm}
+
+            \textcolor{green!10!black!90}{\tiny \textit{and, having satisfied all the conditions prescribed by the Statutes of the University on 5 August \YEAR, was on \DATE\ \YEAR\ admitted to the \\ Degree of \\}}
+            
+            \vspace{5mm}
+            
+            \textcolor{black}{\small DOCTOR OF PHILOSOPHY}
+
+            \vspace{9mm}
+            
+            \hspace*{\fill} {
+                \color{blue!40!black}
+                \raggedright
+                \scalebox{.40}{
+                    \raggedright
+                    \begin{tabular}{ccc}
+                        \begin{minipage}{.6\textwidth}
+                            \centering
+                            \includegraphics[height=0.8cm]{img/kv.png}
+                        \end{minipage}
+                         & & 
+                        \begin{minipage}{.6\textwidth}
+                            \centering
+                            \includegraphics[height=0.8cm]{img/cub.png}
+                        \end{minipage}
+                        \\
+                        \cline{1-1}
+                        	\cline{3-3}
+                        \\
+                        \makecell[c]{VICE-CHANCELLOR AND \\ PRINCIPAL}
+                         & & 
+                        \makecell[c]{DEPUTY VICE-CHANCELLOR AND \\ ACTING-PRINCIPAL}
+                        \\
+                    \end{tabular}
+                }
+            }
+
+
+            {
+                \color{black}
+                \scalebox{.48} {
+                	\makecell[l]{University Office, \\ Home University \\ \DATE\ \YEAR}
+                	\begin{minipage}{.8\textwidth}
+                	\centering
+                	\includegraphics[height=1.5cm]{img/BL-BB.png}
+            		\end{minipage}
+                	\color{blue!40!black}
+                    \centering
+                    \begin{tabular}{ccc}
+                        \begin{minipage}{.6\textwidth}
+                            \centering
+                            \includegraphics[height=0.8cm]{img/ak.png}
+                        \end{minipage}
+                        \\
+                        \cline{1-1}
+                        \\
+                        \makecell[c]{REGISTRAR AND \\ SECRETARY}
+                        \\
+                    \end{tabular}
+                }
+            }
+
+        }
+    \end{minipage}
+}
+\end{document}

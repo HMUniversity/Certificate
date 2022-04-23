@@ -7,17 +7,22 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v2
 
-      - name: Compile LaTeX document
+      - name: Compile LaTeX document - St. Chi
         uses: xu-cheng/latex-action@v2
         with:
           latexmk_use_xelatex: true
-          root_file: cert.tex
+          root_file: stchi-cert.tex
+
+      - name: Compile LaTeX document - St. Linus
+        uses: xu-cheng/latex-action@v2
+        with:
+          latexmk_use_xelatex: true
+          root_file: stlinus-cert.tex
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v2
         with:
           name: "HM University Certificate"
-          path: cert.pdf
-
-
-      
+          path: |
+            stchi-cert.pdf
+            stlinus-cert.pdf
