@@ -1,5 +1,7 @@
 name: Get HM University Certificate
-on: [push]
+on: 
+    push:
+    workflow_dispatch:
 jobs:
   build_latex:
     runs-on: ubuntu-latest
